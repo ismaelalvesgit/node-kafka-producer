@@ -1,5 +1,5 @@
 # Kafka producer em node.js
-Este projeto foi criado por motivos acadêmicos e para testes de consumo de queue em kafka
+Este projeto foi criado por motivos acadêmicos e para testes de publicação de dados na queue em kafka
 
 ## Preview Code
 ```js
