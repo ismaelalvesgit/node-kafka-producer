@@ -1,0 +1,23 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "jsx": true,
+            "globalReturn": false
+        }
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "func-names": "off",
+        "no-underscore-dangle": "off",
+        "consistent-return": "off"
+    }
+}
