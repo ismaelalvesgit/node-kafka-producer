@@ -42,11 +42,11 @@ setImmediate(()=>{
 
 ### Setup
 
-#### 1) Instalação de dependencias
+#### 1) Instalação de dependências
 ``` sh
 npm i 
 ```
-Obs: E necessario que o [NodeJs](https://nodejs.org/en/) já esteja instalado em sua máquina
+Obs: É necessario que o [NodeJs](https://nodejs.org/en/) já esteja instalado em sua máquina
 
 #### 2) Publicar dados na Queue
 ``` sh
@@ -54,14 +54,14 @@ npm start
 ```
 
 #### 3) Env´s
-Deixei um arquivo `.env.example` para entendimento das envs que utilizo
+Deixei um arquivo `.env.example` para entendimento das env's que utilizo
 
 Env             |   Tipo   | Descrição
 ----------------|----------|------------------
 KAFKA_CLIENT_ID | `string` | Nome do cliente Ex: kafka-producer
 KAFKA_BROKER    | `string` | Url dos brokers Ex: 127.0.0.1:9093;127.0.0.1:9094
 
-#### 4) Estrutura de dados esperado para publicação
+#### 4) Estrutura de dados esperada para publicação
 Campo    |   Tipo   | Descrição
 ---------|----------|------------------
 topic    | `string` | Nome da queue
@@ -78,7 +78,7 @@ messages | `array`  | Dados a serem publicados na queue
 ]
 ```
 #### 5) Docker
-Para facilitar os teste deixei um docker-compose já pre-configurado com as ferramentas [Kakfa](https://hub.docker.com/r/bitnami/kafka), 
+Para facilitar os testes deixei um docker-compose já pre-configurado com as ferramentas [Kakfa](https://hub.docker.com/r/bitnami/kafka), 
 [Kafdrop](https://hub.docker.com/r/obsidiandynamics/kafdrop), [Zookeeper](https://hub.docker.com/r/bitnami/zookeeper)
 ```yml
 version: '3'
