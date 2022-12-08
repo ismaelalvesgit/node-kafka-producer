@@ -1,0 +1,8 @@
+[
+    {
+        "topic": "Queuing.Example",
+        "messages": [{
+            "teste": "Olá mundo"
+        }]
+    }
+]
