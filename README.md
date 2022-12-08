@@ -53,7 +53,15 @@ Obs: E necessario que o [NodeJs](https://nodejs.org/en/) já esteja instalado em
 npm start
 ```
 
-#### 3) Estrutura de dados esperado para publicação
+#### 3) Env´s
+Deixei um arquivo `.env.example` para entendimento das envs que utilizo
+
+Env             |   Tipo   | Descrição
+----------------|----------|------------------
+KAFKA_CLIENT_ID | `string` | Nome do cliente Ex: kafka-producer
+KAFKA_BROKER    | `string` | Url dos brokers Ex: 127.0.0.1:9093;127.0.0.1:9094
+
+#### 4) Estrutura de dados esperado para publicação
 Campo    |   Tipo   | Descrição
 ---------|----------|------------------
 topic    | `string` | Nome da queue
@@ -69,7 +77,7 @@ messages | `array`  | Dados a serem publicados na queue
     }
 ]
 ```
-#### 4) Docker
+#### 5) Docker
 Para facilitar os teste deixei um docker-compose já pre-configurado com as ferramentas [Kakfa](https://hub.docker.com/r/bitnami/kafka), 
 [Kafdrop](https://hub.docker.com/r/obsidiandynamics/kafdrop), [Zookeeper](https://hub.docker.com/r/bitnami/zookeeper)
 ```yml
