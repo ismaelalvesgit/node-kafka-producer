@@ -9,8 +9,7 @@ const run = async ()=>{
       brokers,
     });
     const producer = kafka.producer({createPartitioner: Partitioners.LegacyPartitioner});
-    await Promise.all(kafkaProducer.map(async(produce)=>{
-        const { topic, messages } = produce;
+    await Promise.all(kafkaProducer.map(async({topic, messages})=>{
         const identifier = v4();
         await producer.connect();
         console.log(`Send data in identifier: ${identifier} topic: ${topic}, data: ${JSON.stringify(messages)}`);
